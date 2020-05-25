@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="test">
+    <test name="suit1">
+        <classes>
+            <class name="com.course.testng.suite.SuiteConfig"/>
+            <class name="com.course.testng.suite.LoginTest"/>
+            <class name="com.course.testng.suite.PayTest"/>
+        </classes>
+    </test>
+
+    <test name="suit2">
+        <classes>
+            <class name="com.course.testng.suite.SuiteConfig2"/>
+            <class name="com.course.testng.suite.LoginTest2"/>
+            <class name="com.course.testng.suite.PayTest2"/>
+        </classes>
+    </test>
+</suite>
