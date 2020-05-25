@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--
+tests级别： 相同的<test>标签下的用例只能在同一线程下执行
+            不同的<test>标签下的用例可以在不同的线程下执行
+classes级别：相同的<classes>标签下的用例在同一个线程中执行
+             不同的<classes>标签下的用例可以在不同的线程中执行
+         注：判断是否相同的依据是标签的name属性值是否相同，相同则为相同的<classes>
+methods级别：所有用例都可以在不同的线程下去执行
+thread-count：代表了最大并发线程数
+注：xml文件配置这种方式不能指定线程池，只有方法上才可以指定线程池
+-->
+
+<suite name="thread" parallel="tests" thread-count="4">
+
+    <test name="test3" >
+        <classes >
+            <!--MultiThreadDemo内容为wo-->
+            <class name="com.course.testng.multiThread.MultiThreadDemo"/>
+            <!--MultiThreadXML内容为test1、test2-->
+            <class name="com.course.testng.multiThread.MultiThreadXML"/>
+        </classes>
+    </test>
+
+    <test name="test2" >
+        <classes >
+            <!--MultiThreadXML2内容为test3-->
+            <class name="com.course.testng.multiThread.MultiThreadXML2"/>
+            <!--MultiThreadXML2内容为test4-->
+            <class name="com.course.testng.multiThread.MultiThreadXML3"/>
+        </classes>
+    </test>
+</suite>
