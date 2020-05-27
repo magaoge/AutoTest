@@ -1,5 +1,7 @@
 ##ignore these files##
 .git/
 .idea/
-Chapter/target/
+Chapter/target/*
+Chapter/test-output/
+Chapter/.idea/workspace.xml
 

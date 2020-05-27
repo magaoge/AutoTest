@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="这是我自己的测试报告">
+    <test name="report">
+        <classes>
+            <class name="com.course.testng.report.ReportDemo">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="logDemo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <!--这是需要翻墙才能加载到css样式文件的监听类-->
+        <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"></listener>-->
+        <!--这是我们重写的监听类-->
+        <listener class-name="com.course.testng.report.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>
