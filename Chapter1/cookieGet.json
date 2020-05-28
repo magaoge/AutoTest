@@ -1,5 +1,21 @@
 [
   {
+    "description":"无参mock,返回cookie",
+    "request":{
+      "uri":"/getNoParamDemo/returnCookie",
+      "method":"get"
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "cookies":{
+        "login":"true"
+      },
+      "text":"获取到cookie信息"
+    }
+  },
+  {
     "description":"无参mock",
     "request":{
       "uri":"/getNoParamDemo/cookie",

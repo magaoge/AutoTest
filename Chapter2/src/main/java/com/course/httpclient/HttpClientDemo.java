@@ -4,7 +4,7 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.testng.annotations.Test;
 
@@ -21,7 +21,7 @@ public class HttpClientDemo {
         String result;
         String url ="https://www.baidu.com";
         HttpGet httpGet = new HttpGet(url);
-        HttpClient client = HttpClientBuilder.create().build();
+        HttpClient client = new DefaultHttpClient();;
         HttpResponse execute = client.execute(httpGet);
         HttpEntity entity = execute.getEntity();
         result = EntityUtils.toString(entity,"utf-8");
