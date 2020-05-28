@@ -1,0 +1,21 @@
+[
+  {
+    "description":"这是一个带有header的请求",
+    "request":{
+      "uri":"/get/header/deomo",
+      "method":"get",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "json":{
+        "name":"huhansan"
+      }
+    },
+    "response":{
+      "json":{
+        "name":"胡汉三",
+        "age":18
+      }
+    }
+  }
+]

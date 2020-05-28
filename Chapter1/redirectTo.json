@@ -1,0 +1,29 @@
+[
+  {
+    "description":"重定向请求1",
+    "request":{
+      "uri":"/redirect/demo"
+    },
+    "redirectTo":"https://www.baidu.com/"
+  },
+  {
+    "description":"自定义重定向",
+    "request":{
+      "uri":"/redirect/source/demo"
+    },
+    "redirectTo":"/redirect/destination/demo"
+  },
+  {
+    "description":"自定义目的请求",
+    "request":{
+      "uri":"/redirect/destination/demo"
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+        "text":"重定向成功！"
+    }
+  }
+
+]

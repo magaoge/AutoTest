@@ -1,0 +1,37 @@
+[
+  {
+    "description":"无参mock",
+    "request":{
+      "uri":"/getNoParamDemo/cookie",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "text":"这是一个无参数带cookie的get请求"
+    }
+  },
+  {
+    "description":"有参mock",
+    "request":{
+      "uri":"/getParamDemo/cookie",
+      "method":"get",
+      "queries":{
+        "name":"huhansan"
+      },
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "text":"这是一个有参数带cookie的get请求"
+    }
+  }
+]
