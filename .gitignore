@@ -4,6 +4,6 @@
 Chapter/target
 Chapter/test-output/
 Chapter/.idea/workspace.xml
-Chapter2/target/.*
+Chapter2/target/
 Chapter/Chaoter.iml
 Chapter2/Chaoter2.iml
