@@ -18,7 +18,7 @@ import java.util.Objects;
 @RestController
 //关联swagger配置文件，因为目前并未声明该类访问路径，写"/"，为该类中的所有接口组命名
 @Api(value = "/",description = "这是我全部的get请求")
-public class MyGetMethod {
+    public class MyGetMethod {
 
     @RequestMapping(value = "/getNoParamDemo/returnCookie",method = RequestMethod.GET)
     //对该接口单独描述，描述功能及请求方式

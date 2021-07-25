@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+<!--typeAliases可以为变量设置别名，例：
+<typeAliases>
+    <typeAlias alias="user" type="cn.com.mybatis.pojo.User"/>
+    <typeAlias alias="str" type="java.lang.String"/>
+</typeAliases>
+
+这样就可以在 sql 映射配置文件中使用别名来指定输入 、 输出参数的类型了，其示例代码如下：
+<select id="findUserByUsername" parameterType="str" resultType="user">
+    SELECT * FROM USER WHERE username LIKE '%${value}%'
+</select>
+详情访问：https://blog.csdn.net/fageweiketang/article/details/80776883-->
+    <typeAliases>
+        <package name="com.course.model" />
+    </typeAliases>
+
+    <mappers>
+        <mapper resource="mapper/SQLMapper.xml" />
+    </mappers>
+
+</configuration>

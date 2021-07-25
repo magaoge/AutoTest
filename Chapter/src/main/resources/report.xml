@@ -15,8 +15,6 @@
     </test>
 
     <listeners>
-        <!--这是需要翻墙才能加载到css样式文件的监听类-->
-        <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"></listener>-->
         <!--这是我们重写的监听类-->
         <listener class-name="com.course.testng.report.ExtentTestNGIReporterListener"></listener>
     </listeners>
